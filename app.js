@@ -29,7 +29,7 @@ class App{
 		this.scene = new THREE.Scene();
         this.scene.add( this.dolly );
         
-		const ambient = new THREE.HemisphereLight(0xFFFFFF, 0xAAAAAA, 0.8);
+		const ambient = new THREE.HemisphereLight(0xe12424, 0xAA0000, 10.0);
 		this.scene.add(ambient);
 
 		this.renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -131,7 +131,7 @@ class App{
                 const door2 = college.getObjectByName("LobbyShop_Door__2_");
                 const pos = door1.position.clone().sub(door2.position).multiplyScalar(0.5).add(door2.position);
                 const obj = new THREE.Object3D();
-                obj.name = "GamingShop";
+                obj.name = "LobbyShop";
                 obj.position.copy(pos);
                 college.add( obj );
                 
@@ -196,7 +196,7 @@ class App{
             panelSize: { height: 0.5 },
             height: 256,
             name: { fontSize: 50, height: 70 },
-            info: { position:{ top: 70, backgroundColor: "#00CC0C", fontColor:"#00FF00" } }
+            info: { position:{ top: 70, backgroundColor: "#ccc", fontColor:"#000" } }
         }
         const content = {
             name: "name",
