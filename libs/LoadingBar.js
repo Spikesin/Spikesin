@@ -16,11 +16,11 @@ class LoadingBar{
 		barBase.style.background = '#aaa';
 		barBase.style.width = '50%';
 		barBase.style.minWidth = '250px';
-		barBase.style.borderRadius = '10px';
+		barBase.style.borderRadius = '50px';
 		barBase.style.height = '15px';
 		this.domElement.appendChild(barBase);
 		const bar = document.createElement("div");
-		bar.style.background = '#22a';
+		bar.style.background = '#dd5';
 		bar.style.width = '50%';
 		bar.style.borderRadius = '10px';
 		bar.style.height = '100%';
